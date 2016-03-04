@@ -26,21 +26,10 @@ $('#results').click(function() {
 $('#x').click(function() {
   $('#results').unbind();
   $('#x').toggle();
-  var foods = Object.keys(tally);
-  var results = $('#results > #output');
-  results.html('');
-  var textbox = '<textarea name="textarea" rows="13" cols="50" class="col-xs-10 col-xs-offset-1"></textarea>';
-  var string = '';
-  var last = foods.length-1;
-  foods.forEach(function(food, i) {
-    var f = properNames[food] ? properNames[food] : food;
-    string += (i === last ? f + ': ' + tally[food] : f + ': ' + tally[food] + '\n');
-  });
-  var textbox = $(textbox).text(string);
-  results.append(textbox);
-  // $('textarea').css(randomBg());
-  $('textarea').on('focus', function() {
-    $(this).select();
+  $('#results').prop('contentEditable', true);
+  $('#results').css(randomBg());
+  $('#results').click(function() {
+    $(this).css(randomBg());
   });
 });
 
