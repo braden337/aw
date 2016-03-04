@@ -1,9 +1,12 @@
 var properNames = {
-  Chubby: 'Chubby Chicken',
-  Teen: 'Teen Burger',
-  Papa: 'Papa Burger',
-  Strips: 'Chicken Strips',
-  'Sweet Fries': 'Sweet Potato Fries'
+  Chubby: 'Chubby &#x1F414;&#x1F354;',
+  Teen: 'Teen &#x1F354;',
+  Papa: 'Papa &#x1F354;',
+  Strips: '&#x1F414; Strips',
+  Fries: '&#x1F35F;',
+  'Sweet Fries': 'Sweet Potato &#x1F35F;',
+  'Onion Rings': 'Onion &#x1F48D;',
+  'Root Beer': 'Root &#x1F37A;'
 }
 
 var tally = {};
