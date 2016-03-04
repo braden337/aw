@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro);
+
+@mixin rainbow {
+  &:nth-child(1) {
+      background-color: hsla(0, 50%, 50%, 1);
+      color: hsla(0, 50%, 30%, 1);
+    }
+  &:nth-child(2) {
+    background-color: hsla(72, 50%, 50%, 1);
+    color: hsla(72, 50%, 30%, 1);
+  }
+  &:nth-child(3) {
+    background-color: hsla(144, 50%, 50%, 1);
+    color: hsla(144, 50%, 30%, 1);
+  }
+  &:nth-child(4) {
+    background-color: hsla(216, 50%, 50%, 1);
+    color: hsla(216, 50%, 30%, 1);
+  }
+  &:nth-child(5) {
+    background-color: hsla(288, 50%, 50%, 1);
+    color: hsla(288, 50%, 30%, 1);
+  }
+}
+
+body {
+  background-color: hsla(190, 10%, 50%, 1);
+  color: hsla(190, 10%, 30%, 1);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#start {
+  display: none;
+}
+
+.item {
+  @include rainbow;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 5vh;
+  height: 5vh;
+  padding: 25vh 0;
+  @media (min-width: 600px) {
+    font-size: 4rem;
+  };
+}
+
+#meal {
+  display: block;
+}
+
+#side {
+  display: none;
+}
+
+#drink {
+  display: none;
+  .item { padding: 16.7vh 0; }
+}
+
+#results {
+  display: none;
+  padding: 10px 20px 20px 50px;
+  min-height: 100vh;
+  font-size: 3rem;
+  h1 {
+    font-style: italic;
+  }
+  p {
+    margin: 0; padding: 0;
+  }
+  p + p {
+    margin-top: 10px;
+  }
+  span {
+    font-family: 'Source Code Pro', monospace;
+  }
+}

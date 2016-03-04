@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro);
+/* line 26, ../scss/style.scss */
+body {
+  background-color: #73888c;
+  color: #455254;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* line 32, ../scss/style.scss */
+#start {
+  display: none;
+}
+
+/* line 36, ../scss/style.scss */
+.item {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 5vh;
+  height: 5vh;
+  padding: 25vh 0;
+}
+/* line 4, ../scss/style.scss */
+.item:nth-child(1) {
+  background-color: #bf4040;
+  color: #732626;
+}
+/* line 8, ../scss/style.scss */
+.item:nth-child(2) {
+  background-color: #a6bf40;
+  color: #637326;
+}
+/* line 12, ../scss/style.scss */
+.item:nth-child(3) {
+  background-color: #40bf73;
+  color: #267345;
+}
+/* line 16, ../scss/style.scss */
+.item:nth-child(4) {
+  background-color: #4073bf;
+  color: #264573;
+}
+/* line 20, ../scss/style.scss */
+.item:nth-child(5) {
+  background-color: #a640bf;
+  color: #632673;
+}
+@media (min-width: 600px) {
+  /* line 36, ../scss/style.scss */
+  .item {
+    font-size: 4rem;
+  }
+}
+
+/* line 48, ../scss/style.scss */
+#meal {
+  display: block;
+}
+
+/* line 52, ../scss/style.scss */
+#side {
+  display: none;
+}
+
+/* line 56, ../scss/style.scss */
+#drink {
+  display: none;
+}
+/* line 58, ../scss/style.scss */
+#drink .item {
+  padding: 16.7vh 0;
+}
+
+/* line 61, ../scss/style.scss */
+#results {
+  display: none;
+  padding: 10px 20px 20px 50px;
+  min-height: 100vh;
+  font-size: 3rem;
+}
+/* line 66, ../scss/style.scss */
+#results h1 {
+  font-style: italic;
+}
+/* line 69, ../scss/style.scss */
+#results p {
+  margin: 0;
+  padding: 0;
+}
+/* line 72, ../scss/style.scss */
+#results p + p {
+  margin-top: 10px;
+}
+/* line 75, ../scss/style.scss */
+#results span {
+  font-family: 'Source Code Pro', monospace;
+}
