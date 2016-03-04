@@ -5,7 +5,7 @@ var properNames = {
   Strips: '&#x1F414; Strips',
   Fries: '&#x1F35F;',
   'Sweet Fries': 'Sweet Potato &#x1F35F;',
-  'Onion Rings': 'Onion &#x1F48D;',
+  'Onion Rings': 'Onion &#x1F48D;s',
   'Root Beer': 'Root &#x1F37A;'
 }
 
