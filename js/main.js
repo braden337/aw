@@ -61,7 +61,7 @@ function runningTotal() {
   var results = $('#results > #output');
   results.html('');
   foods.forEach(function(food) {
-    results.append('<p><b>' + (properNames[food] ? properNames[food] : food) + ':</b> <span>' + tally[food] + '</span></p>');
+    results.append('<p><span>' + tally[food] + '</span> <b>' + (properNames[food] ? properNames[food] : food) + '</b></p>');
   });
 }
 
