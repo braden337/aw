@@ -7,6 +7,11 @@ body {
 }
 
 /* line 9, ../scss/style.scss */
+.container-fluid {
+  position: relative;
+}
+
+/* line 13, ../scss/style.scss */
 .item {
   text-align: center;
   font-size: 2rem;
@@ -14,28 +19,28 @@ body {
   padding: 12.6vh 0;
 }
 @media (min-width: 600px) {
-  /* line 9, ../scss/style.scss */
+  /* line 13, ../scss/style.scss */
   .item {
     font-size: 4rem;
   }
 }
 
-/* line 19, ../scss/style.scss */
+/* line 23, ../scss/style.scss */
 #meal {
   display: block;
 }
 
-/* line 23, ../scss/style.scss */
+/* line 27, ../scss/style.scss */
 #side {
   display: none;
 }
 
-/* line 27, ../scss/style.scss */
+/* line 31, ../scss/style.scss */
 #drink {
   display: none;
 }
 
-/* line 31, ../scss/style.scss */
+/* line 35, ../scss/style.scss */
 #results {
   display: none;
   position: relative;
@@ -43,21 +48,31 @@ body {
   min-height: 87.99vh;
   font-size: 2rem;
 }
-/* line 37, ../scss/style.scss */
+/* line 41, ../scss/style.scss */
 #results h1 {
   display: none;
   font-style: italic;
 }
-/* line 41, ../scss/style.scss */
+/* line 45, ../scss/style.scss */
 #results p {
   margin: 0;
   padding: 0;
 }
-/* line 44, ../scss/style.scss */
+/* line 48, ../scss/style.scss */
 #results p + p {
   margin-top: 5px;
 }
-/* line 47, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 #results span {
   font-family: 'Source Code Pro', monospace;
+}
+/* line 54, ../scss/style.scss */
+#results #x {
+  font-size: 2.5rem;
+  padding: 10px 15px;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
 }

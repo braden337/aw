@@ -6,6 +6,10 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.container-fluid {
+  position: relative;
+}
+
 .item {
   text-align: center;
   font-size: 2rem;
@@ -46,5 +50,14 @@ body {
   }
   span {
     font-family: 'Source Code Pro', monospace;
+  }
+  #x {
+    font-size: 2.5rem;
+    padding: 10px 15px;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
   }
 }
