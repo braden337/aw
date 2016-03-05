@@ -26,9 +26,9 @@ $('#results').click(function() {
   $('#meal').toggle();
 });
 
-$('#x').click(function() {
+$('#ok').click(function() {
   $('#results').unbind();
-  $('#x').toggle();
+  $('#ok').toggle();
   $('#results').prop('contentEditable', true);
   $('#results').css(randomBg());
   $('#results').click(function() {
@@ -58,10 +58,10 @@ function runningTotal() {
   position = 0;
   // console.log(tally);
   var foods = Object.keys(tally);
-  var results = $('#results > #output');
-  results.html('');
+  var ul = $('#results > ul');
+  ul.html('');
   foods.forEach(function(food) {
-    results.append('<p><span>' + tally[food] + '</span> &#8212; <b>' + (properNames[food] ? properNames[food] : food) + '</b></p>');
+    ul.append('<li><span>' + tally[food] + '</span> &#8212; <b>' + (properNames[food] ? properNames[food] : food) + '</b></li>');
   });
 }
 
@@ -76,7 +76,7 @@ function colorize() {
   $('.item').each(function() {
     $(this).css(randomBg());
   });
-  $('#x').css(randomBg());
+  $('#ok').css(randomBg());
 }
 
 $(document).ready(function() {
