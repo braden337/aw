@@ -1,9 +1,14 @@
-<!-- Make sure you have Ruby installed, and run `gem install bundler`. You will then
-be able to run `bundle install`. That will install all the gems you need. When
-that finishes you can run `compass watch` to continuously compile the sass file
-into css.
+#### Requirements:
+- Node.js (npm)
+- Ruby (RubyGems)
 
-Open up another tab in your terminal and if you have Python you can run
-`python3 -m http.server 8000` to start a web server in this folder. The site
-should be running on [http://localhost:8000](http://localhost:8000).
- -->
+Once you have node and ruby installed, open up a terminal window and navigate to your project directory. Run these commands:
+
+```shell
+gem install bundler
+bundle install
+npm install
+npm install -g gulp
+```
+
+You should now be able to run the single command `gulp` and it will start the BrowserSync server and launch your default web browser. Gulp watches for changes in your SASS and compiles it for you.
