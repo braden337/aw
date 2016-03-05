@@ -4,6 +4,7 @@ var properNames = {
   Papa: 'Papa &#x1F354;',
   Strips: '&#x1F414; Strips',
   Fries: '&#x1F35F;',
+  Nestea: 'Nes&#x2615;',
   'Sweet Fries': 'Sweet Potato &#x1F35F;',
   'Onion Rings': 'Onion &#x1F48D;s',
   'Root Beer': 'Root &#x1F37A;'
@@ -61,7 +62,7 @@ function runningTotal() {
   var ul = $('#results > ul');
   ul.html('');
   foods.forEach(function(food) {
-    ul.append('<li><span>' + tally[food] + '</span> &#8212; <b>' + (properNames[food] ? properNames[food] : food) + '</b></li>');
+    ul.append('<li><span>' + (tally[food] < 10 ? '&nbsp;' : '') + tally[food] + '</span> &#8212; <b>' + (properNames[food] ? properNames[food] : food) + '</b></li>');
   });
 }
 
