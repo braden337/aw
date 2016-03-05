@@ -16,9 +16,8 @@ gulp.task('sass', function() {
 gulp.task('default', ['sass'], function() {  
   
   browserSync({
-    server: {
-      baseDir: ''
-    }
+    server: { baseDir: '' },
+    reloadOnRestart: true
   });
 
   gulp.watch('scss/*.scss', ['sass']);
