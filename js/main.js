@@ -1,13 +1,13 @@
 var properNames = {
-  Chubby: 'Chubby &#x1F414;&#x1F354;',
-  Teen: 'Teen &#x1F354;',
-  Papa: 'Papa &#x1F354;',
-  Strips: '&#x1F414; Strips',
-  Fries: '&#x1F35F;',
-  Nestea: 'Nes&#x2615;',
-  'Sweet Fries': 'Sweet Potato &#x1F35F;',
-  'Onion Rings': 'Onion &#x1F48D;s',
-  'Root Beer': 'Root &#x1F37A;'
+  Chubby: 'Chubby Chicken', //'Chubby &#x1F414;&#x1F354;',
+  Teen: 'Teen Burger', //'Teen &#x1F354;',
+  Papa: 'Papa Burger', //'Papa &#x1F354;',
+  Strips: 'Chicken Strips', //'&#x1F414; Strips',
+  // Fries: '&#x1F35F;',
+  // Nestea: 'Nes&#x2615;',
+  'Sweet Fries': 'Sweet Potato Fries', //'Sweet Potato &#x1F35F;',
+  // 'Onion Rings': 'Onion &#x1F48D;s',
+  // 'Root Beer': 'Root &#x1F37A;'
 }
 
 var tally = {};
